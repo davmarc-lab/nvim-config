@@ -19,16 +19,9 @@ require("lazy").setup({
         { import = "mil.plugins.core" },
         { import = "mil.plugins.lsp" }, },
     {
-        checker = {
-            enable = true,
-            notify = false,
-        },
-        change_detection = {
-            notify = false,
-        },
         ui = {
-            border = "none",
-            title = "Mil Package Manager",
+            border = "rounded",
+            title = "Package Manager",
             title_pos = "center",
             icons = {
                 cmd = " ",
@@ -54,5 +47,13 @@ require("lazy").setup({
                     "‒",
                 },
             }
+        },
+        checker = {
+            enable = true,
+            notify = false,
+            frequency = 3600 * 4,
+        },
+        change_detection = {
+            notify = false,
         },
     })
