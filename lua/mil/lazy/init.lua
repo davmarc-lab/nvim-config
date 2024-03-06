@@ -26,4 +26,33 @@ require("lazy").setup({
         change_detection = {
             notify = false,
         },
+        ui = {
+            border = "none",
+            title = "Mil Package Manager",
+            title_pos = "center",
+            icons = {
+                cmd = " ",
+                config = "",
+                event = "",
+                ft = " ",
+                init = " ",
+                import = " ",
+                keys = " ",
+                lazy = "󰒲 ",
+                loaded = "●",
+                not_loaded = "○",
+                plugin = " ",
+                runtime = " ",
+                require = "󰢱 ",
+                source = " ",
+                start = "",
+                task = "✔ ",
+                list = {
+                    "●",
+                    "➜",
+                    "★",
+                    "‒",
+                },
+            }
+        },
     })
